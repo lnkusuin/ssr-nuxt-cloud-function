@@ -1,0 +1,12 @@
+{
+  "name": "ssr-nuxt-cloud-function",
+  "version": "1.0.0",
+  "description": "My glorious Nuxt.js project",
+  "author": "inkusu",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix src run build && rm -rf functions/nuxt && cp -r src/nuxt/ functions/nuxt/ && cp src/nuxt.config.js functions/",
+    "serve": "firebase serve",
+    "deploy": "firebase deploy"
+  }
+}
