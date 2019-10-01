@@ -29,6 +29,9 @@ app.all('/*', (req, res, next) => {
   ipRangeCheck(clientIp, ALLOWIPS)
     ? next()
     : basic(req, res, next)
+}, async (req, res, next) => {
+  await nuxt.ready()
+  next()
 })
 
 // Instantiate nuxt.js
