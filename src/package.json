@@ -13,7 +13,7 @@
     "prettier": "prettier --no-editorconfig --write ./**/*.{js,vue,scss,css,md}"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
+    "nuxt": "^3.0.0",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "bootstrap-vue": "^2.0.0-rc.11",
